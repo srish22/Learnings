@@ -59,7 +59,7 @@ while you work.
 
 # Joule Documentation overview
 
-![images](joule documentation overview.png.png)
+![Joule_doc](jouleDocumentationOverview.png)
 
 ---
 

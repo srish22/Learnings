@@ -92,9 +92,9 @@ Once open:
 
 # UI Reference Screens
 
-## Joule Toolbar Button
+## Joule images
 
-![images](using joule.png)
+![Using Joule](images/usingJoule.png)
 
 ---
 
