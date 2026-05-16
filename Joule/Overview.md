@@ -57,9 +57,9 @@ while you work.
 
 ---
 
-# Joule Documentation Navigation
+# Joule Documentation overview
 
-![Joule Documentation Navigation](joule-overview-image.png)
+![images](joule documentation overview.png.png)
 
 ---
 

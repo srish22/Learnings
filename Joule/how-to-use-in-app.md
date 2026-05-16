@@ -94,7 +94,7 @@ Once open:
 
 ## Joule Toolbar Button
 
-![Joule Toolbar](how-to-use-in-app-image.png)
+![images](using joule.png)
 
 ---
 
