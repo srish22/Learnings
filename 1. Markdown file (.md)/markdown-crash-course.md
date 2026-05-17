@@ -13,7 +13,6 @@ Markdown is a lightweight text formatting language used for:
 - developer wikis
 - GitHub repositories
 
----
 
 ## Why Developers Use It
 
@@ -24,7 +23,6 @@ Markdown is a lightweight text formatting language used for:
 - easy to maintain
 - AI-friendly
 
----
 
 ## Common File Names
 
@@ -39,8 +37,8 @@ cli-cheatsheet.md
 
 # 2. Syntax 
 
-## Headings
 
+## Headings
 ```markdown
 # Main Heading
 ## Sub Heading
@@ -49,7 +47,7 @@ cli-cheatsheet.md
 
 ## Lists
 
-### Bullet List
+### a. Bullet List
 
 ```markdown
 - item 1
@@ -57,9 +55,7 @@ cli-cheatsheet.md
 - item 3
 ```
 
----
-
-### Numbered List
+### b. Numbered List
 
 ```markdown
 1. Step one
@@ -67,13 +63,12 @@ cli-cheatsheet.md
 3. Step three
 ```
 
----
+--- 
 
 ## Code Blocks
 
 Most important feature for developer notes.
 
----
 
 ### Syntax
 
@@ -83,7 +78,6 @@ npm install
 ```
 ````
 
----
 
 ### Examples
 
@@ -93,7 +87,6 @@ npm install
 npm install
 ```
 
----
 
 - JavaScript
 
@@ -101,7 +94,6 @@ npm install
 console.log("hello");
 ```
 
----
 
 - JSON
 
@@ -111,7 +103,6 @@ console.log("hello");
 }
 ```
 
----
 
 ### Best Practice
 
@@ -132,7 +123,6 @@ Always specify language type:
 Use `joule deploy`
 ```
 
----
 
 ### Example
 
@@ -147,8 +137,6 @@ Use `joule deploy`
 ```markdown
 [Google](https://google.com)
 ```
-
----
 
 ### Best Practice
 
@@ -169,7 +157,6 @@ inside notes.
 ![Image Name](images/setup.png)
 ```
 
----
 
 ### Recommended Structure
 
@@ -184,7 +171,6 @@ JOULE/
 └── cli-cheatsheet.md
 ```
 
----
 
 ### Important Rule
 
@@ -194,7 +180,6 @@ Use:
 Avoid:
 - local machine paths
 
----
 
 ### Example
 
@@ -208,7 +193,7 @@ Avoid:
 
 Very useful for quick revision notes.
 
----
+
 
 ### Syntax
 
@@ -219,7 +204,6 @@ Very useful for quick revision notes.
 | joule deploy | deploy |
 ```
 
----
 
 ### Example
 
@@ -237,7 +221,6 @@ Used for:
 - important notes
 - reminders
 
----
 
 ### Syntax
 
@@ -245,7 +228,6 @@ Used for:
 > Important note
 ```
 
----
 
 ### Example
 
@@ -270,7 +252,6 @@ Used for:
 ```markdown
 **bold**
 ```
----
 
 ### Italic
 
