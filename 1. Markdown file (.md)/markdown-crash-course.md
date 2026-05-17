@@ -27,7 +27,7 @@
 | Bold | `**text**` | `**Important**` |
 | Italic | `*text*` | `*note*` |
 | Inline Code | `` `code` `` | `` `joule deploy` `` |
-| Code Block | ```` ```lang ```` | Use language type for syntax highlighting |
+| Code Block | ```` ```lang  ```  ```` | Use language type for syntax highlighting |
 
 ---
 
