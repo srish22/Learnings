@@ -1,280 +1,105 @@
-# Markdown (.md) Crash Course
-
-> Quick revision notes for writing clean and developer-friendly markdown documentation.
-
----
 
 # 1. What Is Markdown?
 
-Markdown is a lightweight text formatting language used for:
-- documentation
-- technical notes
-- README files
-- developer wikis
-- GitHub repositories
+| What Is Markdown? | Why Developers Use It | Common File Names |
+| :--- | :--- | :--- |
+| - Lightweight text formatting language<br><br>- Used for documentation<br><br>- Used for technical notes<br><br>- Used for README files<br><br>- Used for developer wikis<br><br>- Used for GitHub repositories | - Simple syntax<br><br>- Readable as plain text<br><br>- GitHub compatible<br><br>- Lightweight<br><br>- Easy to maintain<br><br>- AI-friendly | - `README.md`<br><br>- `notes.md`<br><br>- `setup-guide.md`<br><br>- `cli-cheatsheet.md` |
 
-
-## Why Developers Use It
-
-- simple syntax
-- readable as plain text
-- GitHub compatible
-- lightweight
-- easy to maintain
-- AI-friendly
-
-
-## Common File Names
-
-```text
-README.md
-notes.md
-setup-guide.md
-cli-cheatsheet.md
-```
-
+<br><br><br>
 
 ---
 
-# 2. Syntax 
+# 2. Syntax Cheat Sheet
 
-
-## ---Headings
-```markdown
-# Main Heading
-## Sub Heading
-### Smaller Heading
-```
-
-
-## ---Lists
-
-### a. Bullet List
-
-```markdown
-- item 1
-- item 2
-- item 3
-```
-
-### b. Numbered List
-
-```markdown
-1. Step one
-2. Step two
-3. Step three
-```
-
-
---- 
-
-## ---Code Blocks
-
-Most important feature for developer notes.
-
-
-### Syntax
-
-````markdown
-```bash
-npm install
-```
-````
-
-
-### Examples
-
--  Bash
-
-```bash
-npm install
-```
-
-
-- JavaScript
-
-```javascript
-console.log("hello");
-```
-
-
-- JSON
-
-```json
-{
-  "name": "test"
-}
-```
-
-
-### Best Practice
-
-Always specify language type:
-- bash
-- javascript
-- json
-- yaml
-- sql
+| Feature | Syntax | Example / Notes |
+|---|---|---|
+| Main Heading | `# Heading` | `# Joule Notes` |
+| Sub Heading | `## Heading` | `## Setup` |
+| Smaller Heading | `### Heading` | `### Install` |
+| Bullet List | `- item` | `- install node` |
+| Numbered List | `1. item` | `1. Login` |
+| Link | `[text](url)` | `[Google](https://google.com)` |
+| Image | `![alt](path)` | `![Setup](images/setup.png)` |
+| Table | `| col | col |` | Best for quick revision |
+| Blockquote | `> note` | `> Important note` |
+| Horizontal Line | `---` | Section separator |
+| Empty line |` <br> `| empty space line |
+| Bold | `**text**` | `**Important**` |
+| Italic | `*text*` | `*note*` |
+| Inline Code | `` `code` `` | `` `joule deploy` `` |
+| Code Block | ```` ```lang ```` | Use language type for syntax highlighting |
 
 ---
 
-## Inline Code
+## Code Block Examples
 
-### Syntax
-
-```markdown
-Use `joule deploy`
-```
-
-
-### Example
-
-Use `joule deploy`
-
----
-
-## Links
-
-### Syntax
-
-```markdown
-[Google](https://google.com)
-```
-
-### Best Practice
-
-Keep:
-- official docs
-- installation links
-- reference links
-
-inside notes.
-
----
-
-## Images
-
-### Syntax
-
-```markdown
-![Image Name](images/setup.png)
-```
-
-
-### Recommended Structure
-
-```text
-JOULE/
-│
-├── images/
-│   ├── setup.png
-│   └── deploy.png
-│
-├── setup.md
-└── cli-cheatsheet.md
-```
-
-
-### Important Rule
-
-Use:
-- relative paths
-
-Avoid:
-- local machine paths
-
-
-### Example
-
-```markdown
-![Setup](images/setup.png)
-```
-
----
-
-## Tables
-
-Very useful for quick revision notes.
-
-
-
-### Syntax
-
-```markdown
-| Command | Purpose |
+| Type | Example |
 |---|---|
-| joule login | login |
-| joule deploy | deploy |
-```
+| Bash | ```bash\nnpm install\n``` |
+| JavaScript | ```javascript\nconsole.log("hello");\n``` |
+| JSON | ```json\n{\n  "name": "test"\n}\n``` |
 
+---
 
-### Example
+## Images Best Practices
 
-| Command | Purpose |
+| Topic | Recommendation |
 |---|---|
-| `joule login` | Login |
-| `joule deploy` | Deploy |
+| Recommended Structure | `images/setup.png` |
+| Good Path Example | `![Setup](images/setup.png)` |
+| Avoid | Local machine paths like `C:\\Users\\...` |
+| Naming Style | Use `kebab-case` → `setup-guide.png` |
+| Folder Structure | Keep all images inside `/images` folder |
 
 ---
 
-## Blockquotes
+## Table Best Use Cases
 
-Used for:
-- warnings
-- important notes
-- reminders
-
-
-### Syntax
-
-```markdown
-> Important note
-```
-
-
-### Example
-
-> Always run lint before deployment.
+| Use Case | Why Useful |
+|---|---|
+| Command Cheatsheets | Quick scanning |
+| Comparisons | Easy understanding |
+| Role Mappings | Compact format |
+| Revision Notes | ADHD-friendly |
+| Summaries | Less scrolling |
 
 ---
 
-## Horizontal Separator
+## Code Block Best Practices
 
-### Syntax
-
-```markdown
----
-```
-
----
-
-## Text Formatting
-
-### Bold
-
-```markdown
-**bold**
-```
-
-### Italic
-
-```markdown
-*italic*
-```
+| Recommendation | Why |
+|---|---|
+| Specify language type | Enables syntax highlighting |
+| Use `bash` for commands | Cleaner terminal rendering |
+| Use `json` for payloads | Better readability |
+| Use code blocks for commands | Easier copy-paste |
 
 ---
 
-## Markdown Preview
+## Common Language Types
 
-### VS Code Shortcut
-
-```text
-Ctrl + Shift + V
-```
+| Type | Usage |
+|---|---|
+| `bash` | terminal commands |
+| `javascript` | JS code |
+| `json` | payloads/config |
+| `yaml` | configs |
+| `sql` | database queries |
 
 ---
 
-# Useful Editors
+## Blockquote Example
+
+| Syntax | Output |
+|---|---|
+| `> Important note` | > Important note |
+
+
+<br><br><br>
+
+---
+
+# 3. Useful Editors
 
 | Tool | Purpose |
 |---|---|
@@ -283,82 +108,36 @@ Ctrl + Shift + V
 | GitHub | Viewing/rendering |
 | Obsidian | Personal notes |
 
----
+<br>
 
-## GitHub Markdown Rendering
-
-GitHub automatically renders:
-- headings
-- tables
-- code blocks
-- images
-- links
-
-This is why most repositories have:
+### Preview - VS Code Shortcut
 
 ```text
-README.md
+Ctrl + Shift + V
 ```
 
----
-
-# Best Practices For Technical Notes
-
-## Keep Notes Concise
-
-Good notes:
-- quick to scan
-- easy to revise
-- implementation-focused
-
-Avoid:
-- huge copied documentation
-- long paragraphs
-
----
-
-## Use Consistent Structure
-
-Recommended pattern:
+###  Preview - Github  
 
 ```text
-What
-Why
-Commands
-Workflow
-Common Issues
-Links
+Edit --> edit/preview
 ```
 
----
-
-## Use Tables For Revision
-
-Tables are excellent for:
-- commands
-- comparisons
-- mappings
+<br><br><br>
 
 ---
 
-## Use Code Blocks For Commands
+# 4. Best Practices For Technical Notes
 
-Always wrap commands inside code blocks.
-
----
-
-## Keep Official Documentation Links
-
-Notes should:
-- summarize concepts
-- not replace official docs
+| Keep Notes Concise | Use Consistent Structure | Use Tables For Revision |
+| :--- | :--- | :--- |
+| - Quick to scan<br><br>- Easy to revise<br><br>- Implementation-focused<br><br>- Avoid huge copied documentation<br><br>- Avoid long paragraphs | - Follow fixed structure<br><br>- What<br><br>- Why<br><br>- Commands<br><br>- Workflow<br><br>- Common Issues<br><br>- Links | - Best for commands<br><br>- Best for comparisons<br><br>- Best for mappings<br><br>- Reduces scrolling<br><br>- Faster understanding |
 
 ---
 
+| Use Code Blocks For Commands | Keep Official Documentation Links | Summary |
+| :--- | :--- | :--- |
+| - Wrap commands inside code blocks<br><br>- Easier copy-paste<br><br>- Better readability<br><br>- Syntax highlighting support | - Notes should summarize concepts<br><br>- Official docs remain source of truth<br><br>- Keep important links in notes | - Prioritize clarity over completeness<br><br>- Make notes quick to revisit<br><br>- Optimize for low cognitive load<br><br>- Build reusable revision system |
 
 
----
 
-
-# Summary
 
