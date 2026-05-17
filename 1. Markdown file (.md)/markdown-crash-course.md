@@ -33,19 +33,21 @@ setup-guide.md
 cli-cheatsheet.md
 ```
 
+
 ---
 
 # 2. Syntax 
 
 
-## Headings
+## ---Headings
 ```markdown
 # Main Heading
 ## Sub Heading
 ### Smaller Heading
 ```
 
-## Lists
+
+## ---Lists
 
 ### a. Bullet List
 
@@ -63,9 +65,10 @@ cli-cheatsheet.md
 3. Step three
 ```
 
+
 --- 
 
-## Code Blocks
+## ---Code Blocks
 
 Most important feature for developer notes.
 
